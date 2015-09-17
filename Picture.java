@@ -130,7 +130,7 @@ public class Picture
         sun.makeVisible();        
         
         me = new Person();
-        me.moveHorizontal(120);
+        me.moveHorizontal(150);
         me.moveVertical(67);
         me.makeVisible();       
         
@@ -144,8 +144,16 @@ public class Picture
         if (house != null)   // only if it's painted already...
         {
             house.changeColor("black");
+            houseHider.changeColor("white");
             window.changeColor("white");
+            windowHider.changeColor("black");
+            pane1.changeColor("black");
+            pane2.changeColor("black");
+            pane3.changeColor("black");
+            pane4.changeColor("black");
             roof.changeColor("black");
+            door.changeColor("white");
+            doorKnob.changeColor("black");
             sun.changeColor("black");
         }
     }
@@ -158,8 +166,17 @@ public class Picture
         if (house != null)   // only if it's painted already...
         {
             house.changeColor("red");
+            houseHider.changeColor("white");
             window.changeColor("black");
-            roof.changeColor("green");
+            windowHider.changeColor("red");
+            pane1.changeColor("white");
+            pane2.changeColor("white");
+            pane3.changeColor("white");
+            pane4.changeColor("white");
+            roof.changeColor("black");
+            door.changeColor("yellow");
+            doorHider.changeColor("white");
+            doorKnob.changeColor("green");
             sun.changeColor("yellow");
         }
     }
